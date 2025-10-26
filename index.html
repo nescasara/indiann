@@ -30,6 +30,34 @@
       <div id="copyStatus" class="success" style="display:none">Copied!</div>
     </div>
   </div>
+<!-- Telegram contact card (paste this where you want the card to appear) -->
+<div class="telegram-card" role="region" aria-label="Telegram contact">
+  <div class="tg-left">
+    <img src="images/profile.jpg" alt="Isabella" class="tg-avatar">
+  </div>
+
+  <div class="tg-body">
+    <div class="tg-top">
+      <div class="tg-name">Isabella <span class="tg-heart">♡</span></div>
+      <div class="tg-sub">Chat with me on Telegram</div>
+    </div>
+
+    <div class="tg-actions">
+      <a class="telegram-btn" href="https://t.me/Isaabelllaaa" target="_blank" rel="noopener noreferrer" aria-label="Open Telegram chat with Isabella">
+        <!-- Telegram icon (inline SVG) -->
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true" style="margin-right:8px">
+          <path d="M21 3L3 10l4.5 1.6L9 19l2.6-1.6L21 3z" fill="#fff" />
+        </svg>
+        💌 Chat on Telegram
+      </a>
+
+      <button class="copy-tg" onclick="copyTelegram()" aria-label="Copy Telegram username">
+        Copy @Isaabelllaaa
+      </button>
+    </div>
+    <div id="tgCopyMsg" class="tg-copy-msg" aria-hidden="true">Copied!</div>
+  </div>
+</div>
 
 <script src="script.js"></script>
 </body>
