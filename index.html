@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flirty Surprise Box 💖</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="profile-card">
+      <img src="images/profile.jpg" alt="Profile" class="profile-img">
+      <h1>Isabella 💖</h1>
+      <p class="bio">Send a $5 tip via Binance to unlock a cute surprise!</p>
+      <button class="btn" onclick="unlockBox()">💌 Unlock Surprise</button>
+    </div>
+    
+    <div class="unlock-box" id="unlockBox">
+      <h2>🎉 Surprise! 🎉</h2>
+      <p>Here is your fun flirty message: "Hey there! 💖 You found me!"</p>
+    </div>
+    
+    <div class="wallet-card">
+      <h3>Pay via Binance (USDT TRC-20)</h3>
+      <div id="walletAddress" class="addr">REPLACE_WITH_YOUR_TRON_USDT_ADDRESS</div>
+      <div class="controls">
+        <button onclick="copyWallet()">Copy Address</button>
+        <a href="https://www.binance.com/en" target="_blank">Open Binance</a>
+      </div>
+      <div id="copyStatus" class="success" style="display:none">Copied!</div>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
