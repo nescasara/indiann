@@ -83,6 +83,7 @@ body{
   color:green;
   margin-top:8px;
 }
+
 /* Telegram card (white + pink soft glow) */
 .telegram-card{
   display:flex;
@@ -107,76 +108,18 @@ body{
 .tg-body{flex:1;min-width:0}
 .tg-top{display:flex;flex-direction:column}
 .tg-name{font-weight:800;color:#222;font-size:18px}
-.tg-heart{color:#ff9fc9;margin-left:6px;font-size:16px}
-.tg-sub{font-size:13px;color:#8a7585;margin-top:4px}
-.tg-actions{display:flex;gap:10px;align-items:center;margin-top:10px;flex-wrap:wrap}
-.telegram-btn{
-  display:inline-flex;
-  align-items:center;
-  gap:6px;
-  padding:10px 14px;
-  border-radius:12px;
-  background: linear-gradient(90deg,#ff78c4,#ff4d9e);
-  color:#fff;
-  text-decoration:none;
-  font-weight:700;
-  box-shadow: 0 10px 30px rgba(255,77,140,0.18);
-  transition:transform .18s ease, box-shadow .18s ease;
-}
-.telegram-btn:hover{ transform: translateY(-3px); box-shadow: 0 18px 40px rgba(255,77,140,0.24); }
 
-.copy-tg{
-  background: transparent;
-  border:1px solid rgba(255,77,140,0.12);
-  padding:9px 12px;
-  border-radius:10px;
-  font-weight:700;
-  color:#ff4d9e;
-  cursor:pointer;
-  transition: background .15s ease, transform .15s ease;
-}
-.copy-tg:hover{ background: rgba(255,77,140,0.04); transform: translateY(-2px); }
-
-.tg-copy-msg{
-  display:inline-block;
-  margin-top:8px;
-  color:#2a8f66;
-  font-weight:700;
-  font-size:13px;
-  opacity:0;
-  transition:opacity .25s ease;
+/* If .tg-name is empty, show the requested name via CSS.
+   Note: pseudo-element content is visual-only and not selectable.
+*/
+.tg-name:empty::after{
+  content: "koro nam eer jaigaii";
+  display:inline;
+  font-weight:800;
+  color:#222;
+  font-size:18px;
 }
 
-/* responsive */
-@media (max-width:480px){
-  .telegram-card{padding:10px;gap:10px}
-  .tg-avatar{width:60px;height:60px}
-  .telegram-btn{padding:9px 12px;font-size:14px}
-}
-/* Telegram card (white + pink soft glow) */
-.telegram-card{
-  display:flex;
-  gap:12px;
-  align-items:center;
-  background: linear-gradient(180deg, #ffffff, #fff9fb);
-  border-radius:14px;
-  padding:10px 12px;
-  box-shadow: 0 8px 30px rgba(255,77,140,0.10), inset 0 1px 0 rgba(255,255,255,0.6);
-  border: 1px solid rgba(255,77,140,0.08);
-  max-width:420px;
-  margin:12px auto;
-}
-.tg-avatar{
-  width:72px;
-  height:72px;
-  border-radius:12px;
-  object-fit:cover;
-  border:3px solid #ff78c4;
-  box-shadow: 0 8px 20px rgba(255,119,196,0.12);
-}
-.tg-body{flex:1;min-width:0}
-.tg-top{display:flex;flex-direction:column}
-.tg-name{font-weight:800;color:#222;font-size:18px}
 .tg-heart{color:#ff9fc9;margin-left:6px;font-size:16px}
 .tg-sub{font-size:13px;color:#8a7585;margin-top:4px}
 .tg-actions{display:flex;gap:10px;align-items:center;margin-top:10px;flex-wrap:wrap}
